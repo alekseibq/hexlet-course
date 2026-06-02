@@ -1,0 +1,27 @@
+<svg viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glow" x1="320" y1="20" x2="320" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" rx="40" fill="#020617" />
+  <path d="M195 385c0-40 32-72 72-72h106c40 0 72 32 72 72v22H195v-22Z" fill="#334155" />
+  <path d="M207 395h226l58 36c7 4 10 13 6 20l-24 39c-4 7-13 10-20 6l-54-33h-186l-54 33c-7 4-16 1-20-6l-24-39c-4-7-1-16 6-20l58-36Z" fill="#0f172a" />
+  <path d="M330 220c-50 0-92 38-100 88h200c-8-50-50-88-100-88Z" fill="#67e8f9" />
+  <path d="M295 308a35 35 0 1 1 70 0 35 35 0 0 1-70 0Z" fill="#fff" opacity="0.92" />
+  <path d="M230 350h180l18 56H212l18-56Z" fill="#94a3b8" />
+  <path d="M260 406h120l8 40H252l8-40Z" fill="#0f172a" />
+  <circle cx="320" cy="344" r="14" fill="#38bdf8" />
+  <path d="M196 395c21-17 46-29 74-34l8 36c-22 5-42 15-60 28l-22-30Z" fill="#334155" />
+  <path d="M444 395c-21-17-46-29-74-34l-8 36c22 5 42 15 60 28l22-30Z" fill="#334155" />
+  <path d="M170 250c10-30 34-54 64-64 30-10 62-8 90 6 28 14 50 38 62 68l-14 6c-11-27-32-49-58-61-26-12-55-13-82-3-27 10-49 30-62 56l-28-8Z" fill="#0ea5e9" opacity="0.8" />
+  <path d="M463 266c-11-33-33-60-62-77-29-17-62-23-94-17-32 6-60 24-81 50l-13-10c24-31 56-52 93-60 36-8 74 0 103 22 29 22 50 54 59 89l-5 6Z" fill="#38bdf8" opacity="0.85" />
+  <circle cx="94" cy="110" r="6" fill="#38bdf8" />
+  <circle cx="116" cy="160" r="4" fill="#7dd3fc" />
+  <circle cx="540" cy="80" r="7" fill="#fff" opacity="0.82" />
+  <circle cx="564" cy="144" r="5" fill="#38bdf8" />
+  <circle cx="486" cy="520" r="6" fill="#7dd3fc" />
+  <circle cx="438" cy="462" r="4" fill="#fff" opacity="0.75" />
+  <rect x="0" y="0" width="640" height="640" fill="url(#glow)" />
+</svg>
