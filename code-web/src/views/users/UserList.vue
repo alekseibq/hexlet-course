@@ -10,9 +10,12 @@ import InputText from "primevue/inputtext";
 import Select from "primevue/select";
 import Toast from "primevue/toast";
 import ConfirmDialog from "primevue/confirmdialog";
-import type { User, UserFormData } from "@/types/user";
+import type { components } from "@/types/api";
 import { usersApi } from "@/api/users";
-import { userSchema } from "./schema";
+import { UserFormData as UserFormDataSchema } from "@/schemas/api";
+
+type User = components["schemas"]["User"];
+type UserFormData = components["schemas"]["UserFormData"];
 
 const toast = useToast();
 const confirm = useConfirm();
@@ -49,7 +52,7 @@ function openEdit(user: User) {
 }
 
 async function save() {
-  const result = userSchema.safeParse(form.value);
+  const result = UserFormDataSchema.safeParse(form.value);
   if (!result.success) {
     const errors: Record<string, string> = {};
     for (const issue of result.error.issues) {
