@@ -39,7 +39,7 @@ const counter = useCounterStore();
             <i class="pi pi-chart-bar text-purple-600 text-xl"></i>
           </button>
           <div>
-            <p class="text-sm text-gray-500">Clicks</p>
+            <p class="text-sm text-gray-500">Количество нажатий</p>
             <p class="text-2xl font-bold text-gray-900">{{ counter.count }}</p>
           </div>
         </div>
