@@ -6,11 +6,6 @@ dev-dist
 .vite
 *.local
 
-# Generated from TypeSpec
-code-web/spec/openapi.yaml
-code-web/src/types/api.ts
-code-web/src/schemas/api.ts
-
 # IDE
 .idea
 .vscode
