@@ -10,6 +10,7 @@
     "spec:build": "tsp compile spec/main.tsp --output-dir spec",
     "spec:types": "openapi-typescript spec/openapi.yaml -o src/types/api.ts",
     "spec:zod": "openapi-zod-client spec/openapi.yaml -o src/schemas/api.ts --export-schemas --export-types && node scripts/postprocess-schemas.mjs src/schemas/api.ts",
+    "prepare": "husky",
     "spec:generate": "npm run spec:build && npm run spec:types && npm run spec:zod"
   },
   "dependencies": {
@@ -21,6 +22,8 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@opencode-ai/plugin": "^1.15.13",
     "@tailwindcss/vite": "^4.1.4",
     "@typespec/compiler": "^1.12.0",
@@ -28,6 +31,7 @@
     "@typespec/openapi3": "^1.12.0",
     "@typespec/rest": "^0.82.0",
     "@vitejs/plugin-vue": "^5.2.3",
+    "husky": "^9.1.7",
     "msw": "^2.14.6",
     "openapi-typescript": "^7.13.0",
     "openapi-zod-client": "^1.18.3",
