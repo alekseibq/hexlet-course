@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "share": "enabled",
+  "share": "auto",
   "command": {
     "grill-me": {
       "template": "Use the grill-me skill to interview me relentlessly about my plan.",
