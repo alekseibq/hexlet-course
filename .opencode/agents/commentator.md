@@ -2,6 +2,7 @@
 description: Reads issues/PRs and replies with comments only. Never makes changes.
 mode: primary
 permission:
+  write: deny
   edit: deny
   bash:
     "*": deny
@@ -15,10 +16,6 @@ permission:
     "git show *": allow
     "git status *": allow
     "git grep *": allow
-    "node -e *": allow
-    "node --eval *": allow
-    "python -c *": allow
-    "python3 -c *": allow
     "npm test": allow
     "pytest *": allow
   github_*: deny
