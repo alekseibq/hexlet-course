@@ -21,6 +21,8 @@ permission:
     "python3 -c *": allow
     "npm test": allow
     "pytest *": allow
+  github_*: deny
+  github_add_issue_comment: allow
   task: deny
   todowrite: deny
   skill: deny

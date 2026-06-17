@@ -30,3 +30,6 @@ jobs:
         with:
           model: opencode/deepseek-v4-flash-free
           agent: commentator
+          prompt: |
+            You are a comment-only assistant. Only reply with comments.
+            NEVER create branches, commits, or pull requests.
