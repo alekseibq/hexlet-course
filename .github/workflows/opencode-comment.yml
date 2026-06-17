@@ -1,4 +1,4 @@
-name: opencode
+name: opencode-comment
 
 on:
   issue_comment:
@@ -9,8 +9,8 @@ on:
 jobs:
   opencode:
     if: |
-      (contains(github.event.comment.body, '/oc') && !contains(github.event.comment.body, '/occ')) ||
-      (contains(github.event.comment.body, '/opencode') && !contains(github.event.comment.body, '/opencode-comment'))
+      contains(github.event.comment.body, '/occ') ||
+      contains(github.event.comment.body, '/opencode-comment')
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -29,3 +29,4 @@ jobs:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         with:
           model: opencode/deepseek-v4-flash-free
+          agent: commentator
